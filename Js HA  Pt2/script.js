@@ -371,3 +371,27 @@ const percChina3 = percentageOfWorld3(1441);
 const percUSA3 = percentageOfWorld3(332);
 
 console.log(percPortugal3, percChina3, percUSA3);
+
+function cutFruitPieces (fruit) {
+    return fruit *4;
+}
+
+function fruitProcessor(apples, oranges) {
+    const applePieces = cutFruitPieces(apples);
+    const orangePieces = cutFruitPieces(oranges);
+
+    const juice = `Juice with ${applePieces} piece of 
+    apple and ${orangePieces} pieces of orange. `;
+    return juice;
+}
+console.log(fruitProcessor (2, 3));
+
+const describePopulation = function (country, population) {
+    const percentage = percentageOfWorld1(population);
+    const description = `${percentage}% of the world. `;
+    console.log(description);
+};
+
+describePopulation("Portugal", 10);
+describePopulation("China", 1441);
+describePopulation("USA", 332);
