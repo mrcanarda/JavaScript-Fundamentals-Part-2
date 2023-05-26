@@ -395,3 +395,51 @@ const describePopulation = function (country, population) {
 describePopulation("Portugal", 10);
 describePopulation("China", 1441);
 describePopulation("USA", 332);
+
+const yearsUntilRetirement = function (birhtYear, 
+    firstName) {
+    const age = calcAge(birhtYear);
+    const retirement = 65 - age;
+
+    if (retirement > 0) {
+        console.log( `${firstName} retires in ${retirement} years` );
+        return retirement;
+    }  else {
+        console.log( `${firstName} has already retired` );
+        return -1;
+    }
+}
+
+*/
+
+const calcAverage = (a, b, c) => (a + b +c) /3 ;  
+//console.log(calcAverage(3, 4, 5));
+
+//Test 1 
+
+let scoreDolphins = calcAverage(44, 23, 71);
+let scoreKoalas = calcAverage(65, 54, 49);
+console.log(scoreDolphins, scoreKoalas);
+
+const checkWinner = function (avgDolphins, avgKoalas) 
+{
+    if (avgDolphins >= 2 * avgKoalas) {
+    console.log(`Dolphons wins (${avgDolphins} vs ${avgKoalas})`);
+}
+    else if (avgKoalas >= 2 * avgDolphins) 
+    {
+    console.log(`Koalas wins (${avgKoalas} vs  ${avgDolphins})`);
+    }
+    else 
+    { 
+        console.log("No teams wins...");
+    }
+}
+
+checkWinner(scoreDolphins, scoreKoalas);
+
+//Test 2 
+scoreDolphins = calcAverage(85, 54, 41);
+scoreKoalas = calcAverage(23, 34, 27);
+console.log(scoreDolphins, scoreKoalas);
+checkWinner(scoreDolphins, scoreKoalas );
