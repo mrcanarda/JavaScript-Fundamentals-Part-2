@@ -564,3 +564,74 @@ const calcTip = function (bill) {
 const bills = [125, 555, 44];
 const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 console.log( bills, tips);
+
+//Dot vs. Bracket notation 
+
+const jonasArray = [
+    "Jonas", 
+    "Schmedtmann", 
+    2037 - 1991, 
+    "teacher",
+    ["Micheal", "Peter", "Steven"]
+];
+
+const jonas = {
+    firstName: "Jonas", 
+    lastName: "Schmedtmann", 
+    age: 2037 - 1991, 
+    job: "teacher", 
+    friends: ["Micheal", "Peter", "Steven"]
+};
+
+const myCountry = {
+    country: "Finland",
+    country: "Helsinki",
+    language: "finnish", 
+    population: 6,
+    neighbours: ["Norway", "Sweden", "Russia"]
+};
+
+console.log(jonas.lastName);
+console.log(jonas["lastName"]);
+
+const nameKey = "Name";
+console.log(jonas["first" + nameKey]);
+console.log(jonas["last" + nameKey]);
+
+const interestedIn = prompt("What do you wnat to know about Toprak? Choose between firstName, lastNanme, age, job, and friends");
+
+if (jonas[interestedIn]) {
+    console.log(jonas [interestedIn]);
+} else {
+    console.log("Wrong request! Choose between firstName, jastName, age, job, and friends");
+}
+
+jonas.location = "Portugal";
+jonas["twitter"] = "@jonasschmedtman";
+console.log(jonas);
+
+// Chalenge 
+console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
+
+
+
+const myCountry = {
+    country: "Finland",
+    country: "Helsinki",
+    language: "finnish", 
+    population: 6,
+    neighbours: ["Norway", "Sweden", "Russia"]
+};
+
+
+console.log(
+    `${myCountry} has ${myCountry.population} million 
+    ${myCountry.language}-speaking people, 
+    ${myCountry.neighbours.length} neigbouring countries and a capital called ${myCountry.capital}.`
+);
+
+myCountry.population += 2; 
+console.log(myCountry.population);
+
+myCountry ["population"] -=2;
+console.log{myCountry.population};
