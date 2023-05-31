@@ -635,3 +635,22 @@ console.log(myCountry.population);
 
 myCountry ["population"] -=2;
 console.log{myCountry.population};
+
+//Test 2 
+scoreDolphins = calcAverage(85, 54, 41);
+scoreKoalas = calcAverage(23, 34, 27);
+console.log(scoreDolphins, scoreKoalas);
+checkWinner(scoreDolphins, scoreKoalas );
+
+
+
+//Introductions to Arrays 
+
+const friend1 = "Micheal"; 
+const friend2 = "Steven";
+const friend3 = "Peter";
+
+const friends = ["Micheal", "Steven", "Peter" ];
+console.log(friends);
+
+const y = new Array(1991, 1984, 2008, 2020);
