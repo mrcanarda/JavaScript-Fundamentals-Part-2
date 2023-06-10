@@ -730,3 +730,19 @@ if (mark.bmi > john.bmi) {
     console.log(`${john.fullName}'s BMI (${john.bmi}) 
     is higher than ${mark.fullName}'s BMI (${mark.bmmi}`)
 }
+
+//console.log("Lifting weights repetitions 1"); 
+//console.log("Lifting weights repetitions 2"); 
+//console.log("Lifting weights repetitions 3"); 
+//console.log("Lifting weights repetitions 4"); 
+//console.log("Lifting weights repetitions 5"); 
+//console.log("Lifting weights repetitions 6"); 
+//console.log("Lifting weights repetitions 7"); 
+//console.log("Lifting weights repetitions 8"); 
+//console.log("Lifting weights repetitions 9"); 
+//console.log("Lifting weights repetitions 10");
+
+// for loop keeps running while condition is TRUE 
+for (let rep = 1; rep <= 30; rep++) {
+    console.log(`Lifting weights repetitions ${rep}`);
+}
