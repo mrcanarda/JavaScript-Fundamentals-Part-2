@@ -746,3 +746,56 @@ if (mark.bmi > john.bmi) {
 for (let rep = 1; rep <= 30; rep++) {
     console.log(`Lifting weights repetitions ${rep}`);
 }
+
+
+const can = [
+    "Can",
+    "Arda", 
+    2023 - 1995, 
+    "teacher", 
+    ["Micheal", "Peter", "Steven"], 
+    true     
+]; 
+const types = [];
+
+//console.log(can[0])
+//console.log(can[1])
+//console.log(can[2])
+//console.log(can[3])
+
+for (let i = 0; i < can.length; i++) {
+    //Reading from can Array
+    console.log(can [i], typeof can [i]);
+
+    //Filling types array
+   // types [i] = typeof can [i]; 
+   // OR 
+   types.push(typeof can [i]);
+}
+
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020]; 
+const ages = []; 
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2037-years[i]);
+}
+
+console.log(ages);
+
+// continue and break 
+
+console.log("--ONLY STRINGS--")
+for (let i =0; i < can.length; i++) {
+    if (typeof can [i] !== "string") continue; 
+
+    console.log(can[i], typeof can [i]);
+}
+
+console.log("--BREAK WITH NUMBER -----")
+for(let i = 0; i < can.length; i++) {
+    if(typeof can [i] === "number") break; 
+    
+    console.log(can[i], typeof can[i]);
+}
